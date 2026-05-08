@@ -1,31 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Im a Virus >:3</title>
-    </head>
-    <body>
-        <h1>Axolotl</h1>
-        <p>This page is about Axolotls :3</p>
-        <hr>
-        <a href="image.html">
-            Pictures of Axolotls
-        </a>
-        <br>
-        <a href="lyrics.html">
-            Axolotl Song Lyrics
-        </a>
-        <br>
-        <a href="mailto:achsolotl@gmail.com">
-            Email an Axolotl today!
-        </a> 
-        <br>
-        <p>No_Depressioni</p>
-        <audio controls loop>
-            <source src="music/No_Depressioni.mp3">
-        </audio>
-        <br>
-        <a href="prank.html">
-            <button>click here</button>
-        </a>
-    </body>
+  <head>
+      <link rel="icon" type="img/png" href="img/icon.png" >
+      <title>Im a Virus >:3</title>
+  </head>
+  <body>
+    <h1><span style="color: deeppink;">Axolotl</span></h1>
+    <audio loop id= "Axolotl">
+      <source src="music/Axolotled.webm">
+    </audio>
+    <table>
+      <tr>
+        <th><h4><big><u>This page is about Axolotls :3</u></big></h4></th>
+        <th>
+          <button style="background-color: deeppink; color: white; border-radius: 25px;" id="btn" onclick="togglePlay()">
+            click me
+          </button>
+          <script>
+            var song = document.getElementById("Axolotl");
+            var text = document.getElementById("btn")
+            function togglePlay(){
+              if (song.paused){
+                song.play();
+                song.volume = 0.05;
+                text.innerHTML = "pause!"
+              }
+              else {
+                song.pause();
+                text.innerHTML = "click me"
+              } 
+            }
+          </script>
+        </th>
+      </tr>
+    </table>
+     
+    <table border="1" style="background-color: black; color: white;">
+        <tr align="left"> 
+            <th width="300">fun facts:</th>
+            <th width="300">Thinks u should do!</th>
+            <th width="300">Thinks i like :3</th>
+        </tr>
+        <tr align="left" style="background-color: darkslateblue;">
+            <td>
+                <ul>
+                    <li>cute animals</li>
+                    <li>goofy aperance</li>
+                    <li>named after god</li>
+                <ul>
+                    <li>Xolotl</li>
+                    <li>Transformed himself into Axolotl</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li>get urselfe a nice drink</li>
+                    <li>put on ur fav song</li>
+                    <li>breath in</li>
+                    <li>and relaxe :D</li>
+                </ol>
+            </td> 
+            <td>
+                <dl>
+                    <span style="color: deeppink;">
+                        <dt>Axolotl:</dt>
+                        <dd>A wimsical dragonlike cute thingi</dd>
+                    </span>
+                    <span style="color: tomato;">
+                        <dt>Miata:</dt>
+                        <dd>The sweetest car ever made</dd>
+                    </span>
+                    <span style="color: lightskyblue;">
+                        <dt>Blahajs:</dt>
+                        <dd>just cute :D</dd>
+                    </span>
+                </dl>
+            </td>
+        </tr>       
+    </table>
+    <hr>
+    <a href="image.html">
+        Pictures of Axolotls
+    </a>
+    <br>
+    <a href="lyrics.html">
+        Axolotl Song Lyrics
+    </a>
+    <br>
+    <a href="mailto:achsolotl@gmail.com">
+        Email an Axolotl today!
+    </a> 
+    <br>
+    <br>
+    <a href="prank.html">
+        <button style="font-size: 25px;color: white ;background-color: deeppink;border-radius: 30px;">
+            Next page =>
+        </button>
+    </a>
+  </body>
 </html>
